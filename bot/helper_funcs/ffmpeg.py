@@ -43,14 +43,20 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
     ##"-metadata", "title=@Anime_Sensei_Network", "-vf", "drawtext=fontfile=njnaruto.ttf:fontsize=20:fontcolor=black:x=15:y=15:text=" "Anime Sensei",
      ## -vf eq=gamma=1.4:saturation=1.4
      ## lol 😂
-    crf.append("28")
-    codec.append("libx264")
-    resolution.append("854x480")
-    preset.append("veryfast")
-    audio_b.append("40k")
-    watermark.append('-vf "drawtext=fontfile=font.ttf:fontsize=15:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:box=1:boxcolor=black@0.5:boxborderw=6:text="AnimeSpectrum')
-    file_genertor_command = f'ffmpeg -hide_banner -loglevel quiet -progress "{progress}" -i "{video_file}" {watermark[0]}  -c:v {codec[0]}  -map 0 -crf {crf[0]} -c:s copy -pix_fmt yuv420p -s {resolution[0]} -b:v 150k -c:a libopus -b:a {audio_b[0]} -preset {preset[0]}  "{out_put_file_name}" -y'
- #Done !!
+    crf.append("46") 
+    codec.append("libsvtav1")
+    resolution.append("1280x536")
+    preset.append("7")
+    audio_b.append("42k")
+    file_genertor_command = (
+        f'ffmpeg -hide_banner -loglevel quiet -progress "{progress}" -i "{video_file}" '
+        f'-map 0 '
+        f'-vf "drawtext=fontfile=font.ttf:text=\'Encoded by > Aka_gns\':x=\'w*0.95-text_w\':y=10:'
+        f'fontcolor=white@0.7:fontsize=45:borderw=2:bordercolor=black@0.7:enable=\'between(t,0,60)\'" '
+        f'-c:v {codec[0]} -crf {crf[0]} -preset {preset[0]} -g 240 -s {resolution[0]} '
+        f'-svtav1-params tune=1:film-grain=0 '
+        f'-c:a libopus -ac 1 -ab {audio_b[0]} -c:s copy "{out_put_file_name}" -y'
+    )
     COMPRESSION_START_TIME = time.time()
     process = await asyncio.create_subprocess_shell(
           file_genertor_command,
