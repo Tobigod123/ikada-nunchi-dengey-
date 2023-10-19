@@ -34,7 +34,7 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
     # https://stackoverflow.com/a/13891070/4723940
     kk = video_file.split("/")[-1]
     aa = kk.split(".")[-1]
-    out_put_file_name = kk.replace(f".{aa}", "[AnimeSpectrum].mkv")
+    out_put_file_name = kk.replace(f".{aa}", "[MXNitro].mkv")
     #out_put_file_name = video_file + "_compressed" + ".mkv"
     progress = output_directory + "/" + "progress.txt"
     with open(progress, 'w') as f:
@@ -51,7 +51,7 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
     file_genertor_command = (
         f'ffmpeg -hide_banner -loglevel quiet -progress "{progress}" -i "{video_file}" '
         f'-map 0 '
-        f'-vf "drawtext=fontfile=font.ttf:text=\'Encoded by > AnimeSpectrum\':x=\'w*0.95-text_w\':y=10:'
+        f'-vf "drawtext=fontfile=font.ttf:text=\'Encoded by > MXNitro\':x=\'w*0.95-text_w\':y=10:'
         f'fontcolor=white@0.7:fontsize=45:borderw=2:bordercolor=black@0.7:enable=\'between(t,0,60)\'" '
         f'-c:v {codec[0]} -crf {crf[0]} -preset {preset[0]} -g 240 -s {resolution[0]} '
         f'-svtav1-params tune=1:film-grain=0 '
