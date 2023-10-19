@@ -36,7 +36,7 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, Usern
 #from bot.helper_funcs.utils import(
 #  delete_downloads
 #)
-os.system("wget https://telegra.ph/file/059d8942b7c02750c01ab.jpg -O thumb.jpg")
+os.system("wget https://te.legra.ph/file/1b370e00fbfa1a25df8d1.jpg -O thumb.jpg")
 
 #LOGS_CHANNEL = -1001283278354
 CURRENT_PROCESSES = {}
@@ -53,7 +53,7 @@ async def incoming_start_message_f(bot, update):
      #     if user.status == "kicked":
       #         await bot.send_message(
       #             chat_id=update.chat.id,
-      #             text="Sorry Sir, You are Banned to use me. Contact my [Boss](https://t.me/Nur0ns).",
+      #             text="Sorry Sir, You are Banned to use me. Contact my [Boss](https://t.me/MXNITRO).",
       #             parse_mode="markdown",
       #             disable_web_page_preview=True
       #          )
@@ -87,7 +87,7 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Channel', url='https://t.me/AnimeSpectrum')
+                    InlineKeyboardButton('Channel', url='https://t.me/MXToons')
                 ]
             ]
         ),
