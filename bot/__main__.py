@@ -151,7 +151,7 @@ if __name__ == "__main__" :
     @app.on_message(filters.incoming & filters.command(["compress", f"compress@{BOT_USERNAME}"]))
     async def help_message(app, message):
         if message.chat.id not in AUTH_USERS:
-            return await message.reply_text("You are not authorised to use this bot contact @TheBatmanShan")
+            return await message.reply_text("You are not authorised to use this bot contact @mxnitro ")
         query = await message.reply_text("ᴀᴅᴅᴇᴅ ᴛᴏ ǫᴜᴇᴜᴇ...\nᴘʟᴇᴀsᴇ ʙᴇ ᴘᴀᴛɪᴇɴᴛ ʏᴏᴜ ᴇɴᴄᴏᴅᴇ ᴡɪʟʟ sᴛᴀʀᴛ sᴏᴏɴ", quote=True)
         data.append(message.reply_to_message)
         if len(data) == 1:
@@ -173,7 +173,7 @@ if __name__ == "__main__" :
     @app.on_message(filters.incoming & (filters.video | filters.document))
     async def help_message(app, message):
         if message.chat.id not in AUTH_USERS:
-            return await message.reply_text("You are not authorised to use this bot contact @ninja_naruto_sai_2")
+            return await message.reply_text("You are not authorised to use this bot contact @mxnitro")
         query = await message.reply_text("ᴀᴅᴅᴇᴅ ᴛᴏ ǫᴜᴇᴜᴇ...\nᴘʟᴇᴀsᴇ ʙᴇ ᴘᴀᴛɪᴇɴᴛ ʏᴏᴜ ᴇɴᴄᴏᴅᴇ ᴡɪʟʟ sᴛᴀʀᴛ sᴏᴏɴ", quote=True)
         data.append(message)
         if len(data) == 1:
@@ -183,7 +183,7 @@ if __name__ == "__main__" :
     @app.on_message(filters.incoming & (filters.photo))
     async def help_message(app, message):
         if message.chat.id not in AUTH_USERS:
-            return await message.reply_text("You are not authorised to use this bot contact @NINJA_NARUTO_SAi_2")
+            return await message.reply_text("You are not authorised to use this bot contact @mxnitro")
         os.system('rm thumb.jpg')
         await message.download(file_name='/app/thumb.jpg')
         await message.reply_text('Thumbnail Added')
