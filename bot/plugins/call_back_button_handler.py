@@ -29,7 +29,7 @@ async def button(bot, update: CallbackQuery):
     except:
         pass
     LOGGER.info(update.message.reply_to_message.from_user.id)
-    if (update.from_user.id == update.message.reply_to_message.from_user.id) or g:
+    if update.from_user.id == update.message.reply_to_message.from_user.id:
         print(cb_data)
         if cb_data == "fuckingdo":
             if update.from_user.id in AUTH_USERS:
