@@ -1,5 +1,9 @@
+
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-::
+
+
+
 Oof 
 Your Bot Father Setting to put
 ```
@@ -13,3 +17,7 @@ resolution - Your Resolution Setting
 audio - Your Audio Setting
 settings - Check Current Ffmpeg Code Settings
 ```
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+</h3>
+
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://githhttps://dashboard.heroku.com/new?template=https://github.com/Tobigod123/ikada-nunchi-dengey-"https://dashboard.heroku.com/new?template=https://githhttps://dashboard.heroku.com/new?template=https://github.com/Tobigod123/ikada-nunchi-dengey-/new?template=https://githhttps://dashboard.heroku.com/new?template=https://github.com/Tobigod123/ikada-nunchi-dengey-https://dashboard.heroku.com/new?template=https://githhttps://dashboard.heroku.com/new?templatm/Tobigod123/ikada-nunchi-dengey-https://dashboard.heroku.com/new?template=https://githhttps://dashboard.heroku.com/new?template=https://github.com/Tobigod123/ikada-nunchi-dengey-> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
