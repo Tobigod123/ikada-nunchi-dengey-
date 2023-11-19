@@ -24,7 +24,7 @@ from bot import (
 )
 from bot.helper_funcs.utils import add_task, on_task_complete
 from pyrogram import Client, filters
-from bot.helper_funcs.Shortern.py import *
+from bot.helper_funcs.Shortern.py import*
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 
 from bot.plugins.incoming_message_fn import (
