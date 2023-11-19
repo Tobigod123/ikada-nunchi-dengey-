@@ -8,6 +8,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 LOGGER = logging.getLogger(__name__)
 import os, time, asyncio, json
 from bot.localisation import Localisation
+from bot.helper_funcs.Shortern import *
 from bot import (
   DOWNLOAD_LOCATION, 
   AUTH_USERS,
@@ -83,11 +84,11 @@ async def incoming_start_message_f(bot, update):
           #  return
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Localisation.START_TEXT,
+        text=Shortern.START,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Channel', url='https://t.me/AnimeSpectrum')
+                    InlineKeyboardButton('Channel', url='https://t.me/AnimeZenith')
                 ]
             ]
         ),
