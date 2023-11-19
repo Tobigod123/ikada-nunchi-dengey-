@@ -5,7 +5,7 @@ from urllib.parse import quote
 from urllib3 import disable_warnings
 
 SHORTENER = "https://atglinks.com/"
-SHORTENER_API = "YOUR_SHORTENER_API_KEY"
+SHORTENER_API = "498ee7efdd27b59fa6436070a5a3eb28d1a39e80"
 
 
 def short_url(longurl):
@@ -53,5 +53,5 @@ async def start(_, message):
     else:
         start_string = '🌹 Welcome To One Of A Modified zenith encode bot\n' \
             'This bot can encode your videos and you can change the settings !\n' \
-            '👨🏽‍💻 Powered By: "https://t.me/AnimeZenith"
+            '👨🏽‍💻 Powered By: "https://t.me/AnimeZenith"'
     await sendMessage(message, start_string)
