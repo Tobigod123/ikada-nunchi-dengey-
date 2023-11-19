@@ -7,7 +7,7 @@ LOGGER = logging.getLogger(__name__)
 
 import asyncio
 import os
-from bot.helper_funcs.Shortern.py import *
+from bot.helper_funcs.Shortern import *
 import time
 import re
 import json
