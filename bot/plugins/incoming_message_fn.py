@@ -84,7 +84,7 @@ async def incoming_start_message_f(bot, update):
           #  return
     await bot.send_message(
         chat_id=update.chat.id,
-        text=Shortern.START,
+        text=Shortern.start,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
