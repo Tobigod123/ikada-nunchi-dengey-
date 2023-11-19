@@ -8,7 +8,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 LOGGER = logging.getLogger(__name__)
 import os, time, asyncio, json
 from bot.localisation import Localisation
-from bot.helper_funcs.Shortern import Shortern
+from bot.helper_funcs.Shortern import short_url , checking_access , start
 from bot import (
   DOWNLOAD_LOCATION, 
   AUTH_USERS,
